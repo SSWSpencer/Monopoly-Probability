@@ -1,0 +1,111 @@
+.imgWrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+.GamePage .imgWrapper img{
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.startButton{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3%;
+    background: white;
+    border: 2px solid black;
+}
+.startButton:hover{
+    cursor: pointer;
+    background: lightgrey;
+    transition: 0.5s;
+}
+
+#loadspinner{
+    width: 10%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plotWrapper{
+    width: 80%;
+    margin: 2% auto;
+    border: 1px solid black;
+}
+
+.buttonSelection{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.buttonSelection a{
+    text-decoration: none;
+    color: black;
+    padding: 5%;
+    background: white;
+    border: 2px solid black;
+}
+
+.buttonSelection a:hover{
+    cursor: pointer;
+    background: lightgrey;
+    transition: 0.5s;
+}
+
+#results{
+    width: 35%;
+    background: white;
+    padding: 0.5%;
+    margin: 0 auto 2% auto;
+    border: 1px solid black;
+
+}
+
+#results p{
+    width: 50%;
+    margin: 2% auto;
+}
+
+#results h1{
+    text-align: center;
+    margin-bottom: 0.2%;
+    margin-right: 2%;
+}
+
+#results .resultsTitle #dropdownArrow{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#results .resultsTitle{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.resultsLine .itemCount{
+    font-weight: bold;
+}
+
+.resultsLine .itemName{
+    font-style: italic;
+}
+
+.results hr{
+    margin: 0;
+}

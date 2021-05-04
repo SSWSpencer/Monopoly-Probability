@@ -1,0 +1,32 @@
+.NavBar{
+    padding: 1% 5%;
+    display: flex;
+    align-items: center;
+
+}
+.NavBar .logo img{
+    width: 11%;
+    margin-right: 1%;
+}
+.NavBar .logo{
+    display: flex;
+    align-items: center;
+}
+.NavBar a{
+    color: black;
+    text-decoration: none;
+
+}
+hr{
+    width: 90%;
+}
+
+.navSelection{
+    font-weight: bold;
+}
+
+.NavLinks{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}

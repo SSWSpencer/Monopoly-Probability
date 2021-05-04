@@ -1,0 +1,25 @@
+.imagemag img{
+    width: 80%;
+}
+.imagemag{
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+
+}
+
+.aboutBox{
+    width: 30%;
+    margin: 2%;
+    background: white;
+    padding: 2%;
+    border: 2px solid black;
+}
+.aboutBoxWrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
