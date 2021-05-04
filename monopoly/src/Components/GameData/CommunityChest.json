@@ -1,0 +1,87 @@
+[
+    {
+        "index": 0,
+        "instruction": "Advance to Go",
+        "discarded": false
+    },
+    {
+        "index": 1,
+        "instruction": "Bank error in your favor",
+        "discarded": false
+    },
+    {
+        "index": 2,
+        "instruction": "Doctor's fees",
+        "discarded": false
+    },
+    {
+        "index": 3,
+        "instruction": "From sale of stock you get $50",
+        "discarded": false
+    },
+    {
+        "index": 4,
+        "instruction": "Get out of jail free",
+        "discarded": false
+    },
+    {
+        "index": 5,
+        "instruction": "Go to jail",
+        "discarded": false
+    },
+    {
+        "index": 6,
+        "instruction": "Grand opera night",
+        "discarded": false
+    },
+    {
+        "index": 7,
+        "instruction": "Holiday fund matures",
+        "discarded": false
+    },
+    {
+        "index": 8,
+        "instruction": "Income tax refund",
+        "discarded": false
+    },
+    {
+        "index": 9,
+        "instruction": "It's your birthday",
+        "discarded": false
+    },
+    {
+        "index": 10,
+        "instruction": "Life insurance matures",
+        "discarded": false
+    },
+    {
+        "index": 11,
+        "instruction": "Hospital fees",
+        "discarded": false
+    },
+    {
+        "index": 12,
+        "instruction": "School fees",
+        "discarded": false
+    },
+    {
+        "index": 13,
+        "instruction": "Receieve $25 consultancy fee",
+        "discarded": false
+    },
+    {
+        "index": 14,
+        "instruction": "Assessed street repairs",
+        "discarded": false
+    },
+    {
+        "index": 15,
+        "instruction": "Second prize in a beauty contest",
+        "discarded": false
+    },
+    {
+        "index": 16,
+        "instruction": "You inherit $100",
+        "discarded": false
+    }
+]

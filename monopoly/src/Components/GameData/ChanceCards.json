@@ -1,0 +1,82 @@
+[
+    {
+        "index": 0,
+        "instruction": "Advance to Illinois Ave",
+        "discarded": false
+    },
+    {
+        "index": 1,
+        "instruction": "Advance to St Charles Place",
+        "discarded": false
+    },
+    {
+        "index": 2,
+        "instruction": "Advance to Nearest Utility",
+        "discarded": false
+    },
+    {
+        "index": 3,
+        "instruction": "Advance to nearest Railroad",
+        "discarded": false
+    },
+    {
+        "index": 4,
+        "instruction": "Bank pays you $50",
+        "discarded": false
+    },
+    {
+        "index": 5,
+        "instruction": "Get out of Jail Free",
+        "discarded": false
+    },
+    {
+        "index": 6,
+        "instruction": "Go back 3 spaces",
+        "discarded": false
+    },
+    {
+        "index": 7,
+        "instruction": "Go to jail",
+        "discarded": false
+    },
+    {
+        "index": 8,
+        "instruction": "Make general repairs on all property",
+        "discarded": false
+    },
+    {
+        "index": 9,
+        "instruction": "Pay poor tax",
+        "discarded": false
+    },
+    {
+        "index": 10,
+        "instruction": "Go to reading railroad",
+        "discarded": false
+    },
+    {
+        "index": 11,
+        "instruction": "Go to boardwalk",
+        "discarded": false
+    },
+    {
+        "index": 12,
+        "instruction": "Chairman of the board",
+        "discarded": false
+    },
+    {
+        "index": 13,
+        "instruction": "Your building and loan matures",
+        "discarded": false
+    },
+    {
+        "index": 14,
+        "instruction": "You won a crossword competition",
+        "discarded": false
+    },
+    {
+        "index": 15,
+        "instruction": "Advance to Go",
+        "discarded": false
+    }
+]
