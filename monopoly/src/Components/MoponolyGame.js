@@ -7,6 +7,7 @@ import "./GameData/MoponolyGame.css";
 import Loading from "../Images/loading.gif";
 import Plot from "react-plotly.js";
 import {IoIosArrowDropdown, IoIosArrowDropup} from "react-icons/io";
+import axios from "axios";
 
 const MoponolyGame = () =>{
     let board = Board;
@@ -841,10 +842,11 @@ const MoponolyGame = () =>{
             board = Board;
         }
         let finalResults = []
+        let otherFinalResults = []
         //console.log("FINAL RESULTS");
         board.forEach(item=>{
             finalResults.push({name: item.name, count: item.count});
-            
+            otherFinalResults.push({name: item.name, count: item.count})
         })
         finalResults.sort(function(a, b){return b.count-a.count});
         console.log(finalResults);
@@ -860,6 +862,20 @@ const MoponolyGame = () =>{
         console.log("NAMES", finalNames);
         setFinalProperties(finalNames);
         setFinalCount(finalPropCount);
+
+        let testResults = {}
+
+        for( let i  = 0; i < otherFinalResults.length; i++){
+            testResults = {...testResults, [otherFinalResults[i].name]: parseInt(otherFinalResults[i].count)}
+        }
+        
+        axios.post("http://localhost:5000/tiles/update", testResults)
+        .then(res=>{
+            console.log(res.data)
+        })
+        .catch(err=>{
+            console.log("ERROR", err)
+        })
     }
 
     const [results, setResults] = useState([]);
