@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 import Moponoly from "../../Images/Moponoly.png";
-import MoponolySmall from "../../Images/MoponolySmall.png"
 import { MapInteractionCSS } from 'react-map-interaction';
 
 const About = () =>{
@@ -27,7 +26,7 @@ const About = () =>{
             </div>
             <div className="imagemag">
                 <MapInteractionCSS>
-                    <img src={Moponoly} />
+                    <img src={Moponoly} alt="Flowchart of the simulation's algorithm"/>
                 </MapInteractionCSS>
             </div>
         </div>

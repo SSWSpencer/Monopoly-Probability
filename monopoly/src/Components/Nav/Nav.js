@@ -9,7 +9,7 @@ const Nav = () => {
         <>
             <div className="NavBar">
                 <div className="logo">
-                    <img src={SiteLogo} />
+                    <img src={SiteLogo} alt="Moponoly Probability Logo"/>
                     <h1>Moponoly Probability</h1>
                 </div>
                 <div className="NavLinks">

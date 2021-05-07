@@ -34,7 +34,7 @@
 }
 
 .plotWrapper{
-    width: 80%;
+    width: 1500px;
     margin: 2% auto;
     border: 1px solid black;
 }
@@ -108,4 +108,9 @@
 
 .results hr{
     margin: 0;
+}
+
+#startbutton{
+    text-decoration: none;
+    color: black;
 }
