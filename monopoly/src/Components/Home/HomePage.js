@@ -34,7 +34,7 @@ const HomePage = () =>{
                     </div>
                     <div className="HomePageBox">
                         <h2>The Simluation</h2>
-                        <p>This application simulates an entire game of Moponoly in seconds. After the simluation ends, it reports back the number of times each tile is landed on. It will also send the data to our back end server, where a global tally is recorded, as to take as large of a sample size as possible.</p>
+                        <p>This application simulates 100,000 games of Moponoly in seconds. After the simluations end, it reports back the number of times each tile was landed on. It will also send the data to our back end server, where a global tally is recorded, as to take as large of a sample size as possible.</p>
                     </div>
                 </div>
             </div>

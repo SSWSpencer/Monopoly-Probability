@@ -913,13 +913,13 @@ const MoponolyGame = () =>{
                     },
                     {type: 'bar', x: finalProperties, y: finalCount},
                     ]}
-                    layout={ {width: 1500, height: 750, title: 'Moponoly Game Results'}}
+                    layout={ {width: 1500, height: 750, title: 'Results After 100,000 Games of Moponoly'}}
                     config = {{staticPlot: true}}
                 />
             </div>
             <div id="results" className={buttonDisabled ? null : "hidden"}>
                 <div className="resultsTitle">
-                    <h1>Detailed Results <span onClick={()=>{setDropdown(!dropdownOpen)}}id="dropdownArrow">{dropdownOpen ? <IoIosArrowDropup/> : <IoIosArrowDropdown/>}</span></h1> 
+                    <h1>Detailed Results (After 100,000 Games) <span onClick={()=>{setDropdown(!dropdownOpen)}}id="dropdownArrow">{dropdownOpen ? <IoIosArrowDropup/> : <IoIosArrowDropdown/>}</span></h1> 
                 </div>
                 <div className={dropdownOpen ? "dropdown" : "hidden"}>
                     {
