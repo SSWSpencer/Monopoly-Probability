@@ -70,7 +70,7 @@ const MoponolyGame = () =>{
         let GameOver = false;
         let Player1Turn = true;
         let Player2Turn = false;
-        let turns = 0;
+        // let turns = 0;
         while(!GameOver){
             while(Player1Turn){
                 //console.log(Player1);
@@ -825,7 +825,7 @@ const MoponolyGame = () =>{
             }
             //console.log();
             //console.log("TURN " + turns);
-            turns++;
+            // turns++;
 
         }
         //console.log(board);
@@ -849,7 +849,7 @@ const MoponolyGame = () =>{
             otherFinalResults.push({name: item.name, count: item.count})
         })
         finalResults.sort(function(a, b){return b.count-a.count});
-        console.log(finalResults);
+        //console.log(finalResults);
         setResults(finalResults);
 
         setIsLoading(false);
@@ -859,7 +859,7 @@ const MoponolyGame = () =>{
             finalNames.push(finalResults[i].name);
             finalPropCount.push(finalResults[i].count);
         }
-        console.log("NAMES", finalNames);
+        //console.log("NAMES", finalNames);
         setFinalProperties(finalNames);
         setFinalCount(finalPropCount);
 
@@ -868,10 +868,10 @@ const MoponolyGame = () =>{
         for( let i  = 0; i < otherFinalResults.length; i++){
             testResults = {...testResults, [otherFinalResults[i].name]: parseInt(otherFinalResults[i].count)}
         }
-        
-        axios.post("http://localhost:5000/tiles/update", testResults)
+
+        axios.post("https://moponolyprobability.herokuapp.com/tiles/update", testResults)
         .then(res=>{
-            console.log(res.data)
+            //console.log(res.data)
         })
         .catch(err=>{
             console.log("ERROR", err)
@@ -887,13 +887,13 @@ const MoponolyGame = () =>{
     return(
         <div className="GamePage">
             <div className="imgWrapper">
-                <img src={HomePageBoard} />
-                <img id="loadspinner" className={isLoading ? null : "hidden"} src={Loading} />
+                <img src={HomePageBoard} alt="Simulation banner background"/>
+                <img id="loadspinner" className={isLoading ? null : "hidden"} src={Loading} alt="Loading spinner"/>
                 <div className={buttonDisabled ? "buttonSelection" : "hidden"}>
                     <a href="#results">See the Results</a>
-                    <a onClick={()=>{window.location.reload(false)}}>Restart the Simluation</a>
+                    <a href="#startbutton" onClick={()=>{window.location.reload(false)}}>Restart the Simluation</a>
                 </div>
-                <a className={buttonDisabled ? "hidden" : "startButton"}onClick={()=>{RunSimulation(1)}}>Start The Game</a>
+                <a id="startbutton" href="#startbutton" className={buttonDisabled ? "hidden" : "startButton"}onClick={()=>{RunSimulation(1)}}>Start The Game</a>
             </div>
             <div className={buttonDisabled ? "plotWrapper" : "hidden"}> 
                 <Plot 
@@ -917,7 +917,7 @@ const MoponolyGame = () =>{
                     {
                         results.map(item=>{
                             return(
-                                <div className="resultsLine">
+                                <div className="resultsLine" key={item.name}>
                                     <p><span className="itemName">{item.name}</span>: <span className="itemCount">{item.count}</span></p>
                                 </div>
                             )

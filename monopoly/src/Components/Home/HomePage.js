@@ -19,7 +19,7 @@ const HomePage = () =>{
                     <Link to="/about"className ="centerButton">About the Simulation</Link>
                     <Link to="/go" className="rightButton">Start the Simulation</Link>
                 </div>
-                <img src={HomePageBoard}/>
+                <img src={HomePageBoard} alt="Homepage Banner of Moponoly"/>
             </div>
             <div className="HomePageBottomWrapper">    
                 <h1 id="readmore">Background</h1>                

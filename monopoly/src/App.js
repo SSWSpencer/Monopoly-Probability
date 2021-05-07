@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import MoponolyGame from "./Components/MoponolyGame";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import Nav from "./Components/Nav/Nav.js";
 import HomePage from "./Components/Home/HomePage.js";
 import About from "./Components/About/About.js";
