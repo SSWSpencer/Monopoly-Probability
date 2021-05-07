@@ -70,9 +70,10 @@ const MoponolyGame = () =>{
         let GameOver = false;
         let Player1Turn = true;
         let Player2Turn = false;
-        // let turns = 0;
+         let turns = 0;
         while(!GameOver){
             while(Player1Turn){
+                //console.log("Player1 Turn")
                 //console.log(Player1);
                 if(Player1.jailed){
                     if(Player1.thriceCount < 3){
@@ -451,7 +452,8 @@ const MoponolyGame = () =>{
                 break;
             }
             while(Player2Turn){
-                //console.log(Player2);
+                //console.log("Player2 Turn");
+                //console.log(Player2)
                 if(Player2.jailed){
                     if(Player2.thriceCount < 3){
                         if(rollDice().doubleRoll){
@@ -825,7 +827,13 @@ const MoponolyGame = () =>{
             }
             //console.log();
             //console.log("TURN " + turns);
-            // turns++;
+            turns++;
+            // ================================IMPORTANT END-CASE================================
+            // Given the fact that the AI here is pretty basic and doesn't have the ability to think for itself, some games will run away and run infinitely.
+            // The average number of turns in a monopoly game is about 30, so when it hits that point, it will automatically end the game.
+            if(turns === 30){
+                GameOver = true;
+            }
 
         }
         //console.log(board);
@@ -874,7 +882,7 @@ const MoponolyGame = () =>{
             //console.log(res.data)
         })
         .catch(err=>{
-            console.log("ERROR", err)
+            //console.log("ERROR", err)
         })
     }
 
@@ -893,7 +901,7 @@ const MoponolyGame = () =>{
                     <a href="#results">See the Results</a>
                     <a href="#startbutton" onClick={()=>{window.location.reload(false)}}>Restart the Simluation</a>
                 </div>
-                <a id="startbutton" href="#startbutton" className={buttonDisabled ? "hidden" : "startButton"}onClick={()=>{RunSimulation(1)}}>Start The Game</a>
+                <a id="startbutton" href="#startbutton" className={buttonDisabled ? "hidden" : "startButton"}onClick={()=>{RunSimulation(100000)}}>Start The Game</a>
             </div>
             <div className={buttonDisabled ? "plotWrapper" : "hidden"}> 
                 <Plot 
