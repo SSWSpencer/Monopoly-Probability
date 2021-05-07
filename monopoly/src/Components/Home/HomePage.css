@@ -86,3 +86,44 @@
     background: lightgrey;
     transition: 0.5s;
 }
+
+@media(max-width: 800px){
+    .HomePageHeader{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .HomePageHeader img{
+        width: 90%;
+    }
+    .imgWrapper img{
+        display: none;
+    }
+    .HomePage .imgWrapper{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+    }
+    .imgButtons{
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transform: none;
+    }
+
+    .HomePageBottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomePageBox{
+        width: 80%;
+        margin-top: 2%;
+    }
+
+    
+}

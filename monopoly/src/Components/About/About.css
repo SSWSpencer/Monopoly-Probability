@@ -23,3 +23,20 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media(max-width: 800px){
+    .aboutBoxWrapper{
+        width: 90%;
+    }
+    .aboutBox{
+        width: 100%;
+    }
+
+    .aboutBox h1{
+        text-align: center;
+    }
+
+    .imagemag{
+        width: 90%;
+    }
+}

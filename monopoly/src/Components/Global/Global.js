@@ -35,7 +35,7 @@ const Global = () =>{
         <div className="globalWrapper">
             <div className="globalHeader">
                 <h1>Global Results</h1>
-                <p>Here are the global results of the simulation. Every time the application is executed, it will automatically send the data to our back end, where it will be tallied up and immediately viewable here. Below the graph is a list of all of the properties and all the times they have been landed on throughout the existence of this application.</p>
+                <p>Here are the global results of the simulation. Every time the application is executed, it will automatically send the data to our back end, where it will be tallied up and immediately viewable here. Below the graph (visible on desktop only) is a list of all of the properties and all the times they have been landed on throughout the existence of this application.</p>
             </div>
             <div className="plotWrapper">
                 <Plot 

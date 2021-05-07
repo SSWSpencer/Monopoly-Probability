@@ -114,3 +114,47 @@
     text-decoration: none;
     color: black;
 }
+
+@media(max-width: 800px) {
+    .imgWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #startbutton{
+        position: static;
+        transform: none;
+        margin-top: 5%;
+        padding: 5% 10%;
+        text-align: center;
+    }
+
+    .buttonSelection{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        transform: none;
+        width: 80%;
+        text-align: center;
+    }
+    .buttonSelection a{
+        margin-top: 2%;
+    }
+    #results{
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    .resultsLine{
+        width: 100%;
+        text-align: center;
+    }
+    #results p{
+        width: 100%;
+    }
+
+    .plotWrapper{
+        display: none;
+    }
+
+}
